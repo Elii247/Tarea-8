@@ -1,13 +1,18 @@
 public class Cuadrado {
-    private float base, altura ;
+    private float lado;
 
-    public Cuadrado(float base, float altura) {
-        this.altura = altura;
-        this.base = base;
+    public Cuadrado(float lado) {
+        this.lado = lado;
+
     }
 
-    public float area(){
-        float area = base * altura;
+    public float area() {
+        float area = lado * lado;
         return area;
     }
 
+    public float perimetro() {
+        float perimetro = 4 * lado;
+        return perimetro;
+    }
+}
