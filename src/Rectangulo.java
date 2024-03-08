@@ -15,7 +15,7 @@ public class Rectangulo {
     }
 
     public float perimetro() {
-        float perimetro = 4 * lado;
-        return perimetro;
+        float resultado = 4 * lado;
+        return resultado;
     }
 }

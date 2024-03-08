@@ -14,8 +14,8 @@ public class Pentagono {
         return perimetro;
     }
     public float area() {
-        float area = perimetro() * apotema / 2;
-        return area;
+        float resultado = perimetro() * apotema / 2;
+        return resultado;
     }
 
 

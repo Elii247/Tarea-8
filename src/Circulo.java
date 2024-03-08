@@ -1,5 +1,5 @@
 public class Circulo {
-    private  float radio;
+    private final float radio;
 
     public Circulo(float radio) {
 
@@ -12,8 +12,8 @@ public class Circulo {
     }
 
     public float perimetro() {
-        float perimetro = 2 * (float) Math.PI * radio;
-        return perimetro;
+        float resultado = 2 * (float) Math.PI * radio;
+        return resultado;
 
     }
 }

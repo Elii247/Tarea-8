@@ -15,7 +15,7 @@ public class Triangulo {
     }
 
     public float perimetro() {
-        float perimetro = lado + lado + lado;
-        return perimetro;
+        float resultado = lado + lado + lado;
+        return resultado;
     }
 }

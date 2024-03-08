@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int opcion, calcular;
-        float lado, altura, base, apotema, perimetro, radio, area;
+        int opcion, calcular, exponente;
+        float lado, altura, base, apotema, perimetro, radio, area, resultado;
+
 
         //introducido por teclado
         System.out.println("Calculadora Geometrica");
@@ -17,9 +18,11 @@ public class Main {
         System.out.println("3. Cuadrado");
         System.out.println("4. Rectangulo");
         System.out.println("5. Pentagono");
+        System.out.println("6. Exponente");
+
+
+        System.out.println("Ingrese su Opcion a calcular: \n");
         opcion = scanner.nextInt();
-        area = scanner.nextFloat();
-        perimetro = scanner.nextFloat();
 
         switch (opcion) {
             case 1://Circulo
@@ -35,13 +38,13 @@ public class Main {
                     System.out.println("El area del circulo es: " + circulo.area());
                 } else if (calcular == 2) {
                     System.out.println("El perimetro del circulo es: " + circulo.perimetro());
-                } else {
+                } else  {
                     System.out.println("Opcion incorrecta");
                 }
                 break;
 
             case 2://Triangulo
-                System.out.println("Ingrese los tres lado del Triangulo: ");
+                System.out.println("Ingrese Informacion sobre el Triangulo \nLado \naltura \nbase: ");
                 lado = scanner.nextFloat();
                 altura = scanner.nextFloat();
                 base = scanner.nextFloat();
@@ -119,6 +122,18 @@ public class Main {
                     System.out.println("Opcion incorrecta");
                 }
                 break;
+            case 6: // Exponenciacion
+                System.out.println("Ingrese la Base: ");
+                base = scanner.nextFloat();
+
+                System.out.println("Ingrese el Exponente: ");
+               exponente = scanner.nextInt();
+
+                Exponenciacion exponente1 = new Exponenciacion(base, exponente);
+                double resultadoExponenciacion = exponente1.calcularExponenciacion();
+
+                System.out.println("El resultado de la exponenciación es: " + resultadoExponenciacion);
+                break;
 
             default:
                 throw new IllegalStateException("Unexpected value: " + opcion);
@@ -126,3 +141,4 @@ public class Main {
 
     }
 }
+////////////ESTA ES LA TAREA 5/////
