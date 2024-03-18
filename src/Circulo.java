@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-public class Circulo {
+public class Circulo{
     private final float radio;
 
-    public Circulo(float radio) {
+    public Circulo(float radio){
 
         this.radio = radio;
     }
 
-    public float area() {
+    public float area(){
         float area = (float) (Math.PI * Math.pow(radio, 2));
         return area;
     }
 
-    public float perimetro() {
+    public float perimetro(){
         float resultado = 2 * (float) Math.PI * radio;
         return resultado;
 

@@ -155,7 +155,7 @@ public class Main {
                 default:
                     System.out.println("Opción no válida");
             }
-            if (continuar) {
+            if (continuar){
                 System.out.print("¿Desea realizar otra operación? (Si/No): ");
                 respuesta = scanner.next();
                 continuar = respuesta.equalsIgnoreCase("Si");
